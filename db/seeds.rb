@@ -18,7 +18,7 @@ ActiveRecord::Base.connection.execute(
 
 10.times do
     Category.create(
-        title: Faker::Commerce.unique.department
+        title: Faker::Commerce.unique.department(1)
     )
 end
 
